@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	 <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap / CSS  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Title -->
+	<title> Data Atlas </title>
+</head>
+
+<body>
+    
+	<header>
+		DataAtlas 
+	</header>
+	
+	<section class="banner" id="home">
+		<div class="container">
+		<nav class="navbar" id="menu">
+			<div class="hbmenu">
+				<div class="line line-1"> </div>
+				<div class="line line-2"> </div>
+				<div class="line line-3"> </div>
+			</div>
+			<ul class="nav-list">
+				<li class="nav-link">
+					<a href="#home" class="nav-link"> Home  </a>
+				</li>
+				<br>
+				<li class="nav-link">
+					<a href="#about" class="nav-link"> About Us  </a>
+				</li>
+				<br>
+				<li class="nav-link">
+					<a href="#explore" class="nav-link"> Explore Data </a>
+				</li>
+				<br>
+				<li class="nav-link">
+					<a href="#contact" class="nav-link"> Contact Us  </a>
+				</li>
+			</ul>
+		</nav>
+		<!--
+			<a href="#about" class="btn_down"> <i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+		-->
+		</div>
+	</section>
+
+	<section class="about" id="about">
+	<h1> About Us
+	<hr style="border: 2px solid white">
+	</h1>
+	<p style="text-align: justify;"> At Data Atlas we aim to build a dynamic and cumulative process that results in the production of knowledge. Inspired from the Collective Learning group at the MIT Media Labs, we have built a tool that will help you access complex datasets and learn from them. We develop large visualization engines and help transform data into stories. Reading data doesn't always have to be about boring and huge excel sheets and neither does it just have to be about looking at numbers. We aim to make learning fun for you by taking you on a journey with us through each dataset with colorful visualizations and interactive elements that you can try out yourself. We want you to focus on the learning whilst we constantly try to make the experience simpler and smoother for you. If you want us to add any topic of your intetest, do drop in a message at the <a href="#contact" style= "text-decoration: none; color: black; font-weight: 500;"> Contact Us </a> section below and we will try our best to get it done for you. Happy Learning! </p>
+	<br>
+	<br>
+	</section>
+
+
+	<section class="explore" id="explore">
+	<h1> Explore Data
+	<hr style="border: 2px solid white">
+	</h1>
+	<div class="row" id="grid">
+		<div class="col no-gutters">
+			<div class="leftside">
+				<h1>  DECODING THE SHIFT </h1>
+				<br>
+				<div class="overlay">
+				<div class="text">
+				<p>
+					Learn about the evolution, growth and impact of New Media. Here, ‘Shift’ means changes that took place in the period after the evolution of new media. Explore, decode and analyse the impact of new media in the world since its introduction has come across as both a boon and a bane. 
+				</p>
+				<br>
+				<center>
+				<a href="dts.html" target="_blank" class="button" style="text-decoration: none;"> View Data </a>
+				</center>
+				</div> 
+				</div>
+			</div>
+		</div>
+		<div class="col no-gutters">
+			<div class="rightside">
+				<h1> WORLD INDEXES </h1>
+				<br>
+				<div class="overlay">
+				<div class="text">
+				<p>
+					Learn about the World Development Indicators and see how the world has progressed in the last then years. Get an insight into the Human Development Index and explore it's various components to understand the change in the living standards from the first world to the third world countries.
+				</p>
+				<br>
+				<center>
+				<a href="https://urjosee.github.io/" target="_blank" class="button" 
+				style="text-decoration: none;"> View Data</a>
+				</center>
+				</div> 
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	</section>
+
+
+	<section class="contact" id="contact">
+	<div class="contact-title">
+		<h1> Contact Us
+		<hr style="border: 2px solid white">
+		</h1>
+	</div>
+	<div class="contact-form">
+		<form id="contact-form" method="post" action="">
+			<input type="text" name="name" class="form-control" placeholder="Your Name" required>
+			<br>
+			<input type="email" name="email" class="form-control" placeholder="Your Email ID" required>
+			<br>
+			<textarea type="text" name="message" class="form-control" rows="8" placeholder="Your Message / Query" required></textarea>
+			<br>
+			<center>
+			<input type="submit" class="form-control submit" value="Send Message">
+			</center>
+		</form>
+	</div>
+	</section>
+
+
+	<!-- Credits Section -->
+    <section class="footer" id="footer">
+          <I> Website made by Urjosee Biswas © </I>
+          <br>
+          <I> Final MSc Project. </I>
+          <br>
+          <I> University of Nottingham, 2020. </I>
+          <br>
+          <I> Website built using HTML, CSS and JavaScript. </I>
+          <br>
+          <I> Visualizations built using Python Altair. </I>
+          <br>
+          <I> Data taken from ourworldindata.com. </I>
+          <br>
+          <I> Image taken from Google images, edited using Adobe XD. </I>
+    </section>
+
+
+</body>
+
+
+<script type="text/javascript">
+
+window.addEventListener('mouseup', function(event)
+{
+	var menubar= document.getElementByID('menu');
+	if(event.target!=menubar) 
+	{
+		menubar.style.display='none';
+	}
+});
+
+const menuIcon = document.querySelector('.hbmenu');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => 
+{
+	navbar.classList.toggle('change');
+});
+
+
+</script>
+
+
+</html>

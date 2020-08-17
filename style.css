@@ -1,0 +1,346 @@
+body, html
+{
+	margin:0;
+	scroll-behavior: smooth;
+}
+
+
+header
+{
+	text-decoration: none;
+	background: black;
+	color: chocolate;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 1em;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.logo
+{
+	color: chocolate;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+section.banner
+{
+	background: url(images/Cover.jpg);
+	text-align: center;
+	background-size: cover;
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+	padding: 4em;
+}
+
+/*
+a.btn_down
+{
+	text-decoration: none;
+	position: absolute;
+	color: black;
+	bottom: 55px;
+	left: 200px;
+	font-size: 40px;
+	border: 2px solid black;
+	border-radius: 60px;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+}
+*/
+
+.btn_down:hover
+{
+	font-weight: bold;
+	color: chocolate;
+	border: 3px solid chocolate;
+}
+
+section.about
+{
+	padding: 4em;
+	background: #FFBF00;
+	text-align: center;
+	width: 100%
+	height: 100vh;
+	padding: 4em;
+}
+
+section.explore
+{
+	padding: 4em;
+	background: #D8D8D8;
+	text-align: center;
+	color: black;
+	width: 100%
+	height: 100vh;
+	padding: 4em;
+}
+
+section.contact
+{
+	padding: 4em;
+	background: #FFBF00;
+	text-align: center;
+}
+
+section.footer
+{
+	padding: 4em;
+	background: black;
+	color: #848484;
+	text-align: center;
+	width: 100%
+	height: 100vh;
+	padding: 4em;
+}
+
+
+h1
+{
+	font-size: 4em;
+	margin: 1em auto;
+	width: 70%;
+
+}
+
+.container
+{
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+}
+
+.hbmenu
+{
+	width: 25px;
+	height: 20px;
+	position: fixed;
+	top: 15px;
+	right: 30px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	z-index: 1;
+}
+
+.navbar
+{
+	width: 20%;
+	height: 100%;
+	background-color: #1C1C1C;
+	position: fixed;
+	top: 0;
+	right: -50%;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30% 0 0 30%;
+	right: 0.8s cubic-bezier(1,0,0,1);
+	z-index: 999;
+}
+
+.change
+{
+	right: 0;
+}
+
+.line
+{
+	width: 100%;
+	height: 3px;
+	background-color: chocolate;
+	transition: all 0.5s;
+}
+
+.change .line-1
+{
+	transform: rotateZ(-405deg) translate(-6px, 4px);
+}
+
+.change .line-2
+{
+	opacity: 0;
+}
+
+.change .line-3
+{
+	transform: rotateZ(405deg) translate(-6px, -4px);
+}
+
+.nav-list
+{
+	text-align: left;
+}
+
+.nav-item
+{
+	list-style: none;
+	margin: 25px;
+}
+
+.nav-link
+{
+	text-decoration: none;
+	font-size: 22px;
+	color: chocolate;
+	font-weight: 500;
+	letter-spacing: 1px;
+	position: relative;
+	padding: 3px 0;
+}
+
+
+.nav-link::after,
+.nav-link::before
+{
+	content: "";
+	width: 100%;
+	height: 2px;
+	background-color: chocolate;
+	position: absolute;
+	left: 0;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+}
+
+.nav-link::after
+{
+	transform-origin: left;
+}
+
+.nav-link::before
+{
+	transform-origin: right;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after
+{
+	transform: scaleX(1);
+}
+
+.nav-link:hover
+{
+	color: white;
+	font-weight: bold;
+}
+
+.col
+{
+	z-index: 0;
+}
+
+
+.leftside, .rightside
+{
+	height: 75vh;
+	width: 100%;
+	text-align: center;
+	color: white;
+	position: relative;
+	padding: 3em;
+}
+
+.leftside
+{
+	background: url(images/Grid1.jpg);
+	background-size: cover;
+}
+
+.rightside
+{
+	background: url(images/Grid2.jpg);
+	background-size: cover;
+}
+
+
+.form-control
+{
+	border: none;
+}
+
+form .submit
+{
+	background: black;
+	border-color: transparent;
+	height: 50px;
+	width: 130px;
+	color: white;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+form .submit:hover
+{
+	background: chocolate;
+	color: black;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+h3
+{
+	color: black;
+	font-weight: bold;
+}
+
+.button {
+  background: black;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button:hover
+{
+	cursor: pointer;
+	background: black;
+	color: chocolate;
+	font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: chocolate;
+}
+
+.leftside:hover .overlay {
+  opacity: 1;
+}
+
+.rightside:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
